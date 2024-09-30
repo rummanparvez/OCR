@@ -17,14 +17,6 @@ The live URL of the deployed web application will be provided once the applicati
 ### 3. Extracted Text and Search Output
 The application outputs the extracted text from the uploaded image in JSON or plain text format. Demonstrations of the search functionality with example keywords are included.
 
-## Evaluation Criteria
-- **Accuracy**: The effectiveness of the OCR model in extracting text from both Hindi and English sections of the image.
-- **Functionality**: The web application correctly handles image uploads, extracts text, and allows for keyword searches.
-- **User Interface**: The web interface is designed to be simple, intuitive, and functional.
-- **Deployment**: The application is accessible online with a reliable deployment process.
-- **Clarity**: Clear and concise documentation and code structure are maintained throughout the project.
-- **Completeness**: All deliverables are submitted and demonstrate the required functionality.
-
 ## Technologies Used
 - **Streamlit**: An open-source app framework for Machine Learning and Data Science projects. Streamlit allows for the quick creation of web applications with minimal effort.
 - **Transformers**: A library by Hugging Face that provides pre-trained models and tools for Natural Language Processing (NLP). In this project, the Qwen2-VL model is utilized for OCR.
