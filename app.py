@@ -5,11 +5,12 @@ import torch
 from io import BytesIO
 from docx import Document
 from fpdf import FPDF
+import os
 
 # Load the Qwen2-VL-7B-Instruct model and tokenizer
 @st.cache_resource(show_spinner=False)
 def load_model():
-    token = "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"  # Your Hugging Face token
+    token = os.getenv("HUGGINGFACE_TOKEN")  # Get Hugging Face token from environment variable
     tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2-VL-7B-Instruct", use_auth_token=token)
     model = Qwen2VLModel.from_pretrained("Qwen/Qwen2-VL-7B-Instruct", use_auth_token=token)
     return tokenizer, model
